@@ -1,0 +1,27 @@
+
+.nav{
+    text-align: right;
+    margin-right: 106px;
+}
+a{
+    text-decoration: none;
+    padding-right: 30px;
+    font-weight: bold;
+    color: black;
+}
+.mydiv{
+    margin: 40px auto;
+    width: 400px;
+}
+.mydiv input{
+    width: 70%;
+    height: 30px;
+    font-size: 15px;
+}
+.mydiv button{
+    font-size: 18px ;
+    height: 34px;
+    color: blanchedalmond;
+    background-color: rgb(242, 138, 138);
+    border-radius: 6px;
+}
