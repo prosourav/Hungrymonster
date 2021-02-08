@@ -45,3 +45,12 @@ a{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px; 
 }
+.ingredients h2{
+ color: rgb(228, 135, 73);
+}
+.ingredients img{
+    width: 300px;
+}
+.ingredients{
+    text-align: center;
+}
