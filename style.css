@@ -1,4 +1,7 @@
 
+body{
+    background-color: antiquewhite;
+}
 .nav{
     text-align: right;
     margin-right: 106px;
@@ -24,4 +27,21 @@ a{
     color: blanchedalmond;
     background-color: rgb(242, 138, 138);
     border-radius: 6px;
+}
+.dish img{
+    width: 100%;
+    height: 300px;
+}
+.dish{
+    text-align: center;
+    border: 1px solid;
+    width: 400px;
+    height: 400px;
+    margin: 10px 10px;
+    background-color: aliceblue;
+}
+#dish-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px; 
 }

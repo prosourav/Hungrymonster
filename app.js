@@ -8,20 +8,24 @@ const button = document.getElementById("btn").addEventListener("click",()=>{
        fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${dishName}`)
        .then(res => res.json())
        .then(data=>{
-    //    displayData(data.meals[0].strMeal);
-       displayData(data);
+       displayData(data.meals);
+      //  console.log(data.meals);
+      
        });
- const displayData = (items)=>{
-    console.log(items);
-    let meals='';
-    for (let i = 0; i < items.meals.length; i++) {
-       
-        meals +=`<h1>${items.meals[i].strMeal}</h1> 
-        <img src="" >
-        ` ;
-       
-    }
-    console.log(element);
- }
+ const displayData = (items) => {
+   const dishList = document.getElementById("dish-list");
+    items.forEach((dish) => {
+    const div = document.createElement("div");
+     div.className="dish";
+     div.innerHTML = `
+         <img src="${dish.strMealThumb}"/>
+         <h2>${dish.strMeal}<h2>
+         <button>Details</button>
+     `;
+    });
+    
+   
+   }
+
 })
  
