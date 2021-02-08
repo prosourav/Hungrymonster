@@ -36,7 +36,7 @@ a{
     text-align: center;
     border: 1px solid;
     width: 400px;
-    height: 400px;
+    height: 420px;
     margin: 10px 10px;
     background-color: aliceblue;
 }
@@ -44,6 +44,14 @@ a{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px; 
+}
+.dish button{
+    background-color: tomato;
+    color: white;
+    font-size: medium;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
 }
 .ingredients h2{
  color: rgb(228, 135, 73);
@@ -53,4 +61,7 @@ a{
 }
 .ingredients{
     text-align: center;
+}
+#dish-detail {
+   text-align: center;
 }
